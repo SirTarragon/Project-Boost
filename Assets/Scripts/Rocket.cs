@@ -6,11 +6,13 @@ using UnityEngine;
 public class Rocket : MonoBehaviour {
 
     private Rigidbody rigidBody;
+    private AudioSource audioSource;
     private double fuelValue;
 
     // Use this for initialization
     void Start() {
         rigidBody = GetComponent<Rigidbody>();
+        audioSource = GetComponent<AudioSource>();
         fuelValue = 100;
     }
 
